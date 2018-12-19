@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AD7132C0-13E0-403D-AED8-E8A5D9DD8BA6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>DoggyMotelSys</RootNamespace>
+    <AssemblyName>DoggyMotelSys</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmAdminKennelAnalysis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAdminKennelAnalysis.Designer.cs">
+      <DependentUpon>frmAdminKennelAnalysis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAdminRegisterArrival.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAdminRegisterArrival.Designer.cs">
+      <DependentUpon>frmAdminRegisterArrival.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAdminRegisterDeparture.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAdminRegisterDeparture.Designer.cs">
+      <DependentUpon>frmAdminRegisterDeparture.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAdminRevenueAnalysis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAdminRevenueAnalysis.Designer.cs">
+      <DependentUpon>frmAdminRevenueAnalysis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmKennelAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKennelAdd.Designer.cs">
+      <DependentUpon>frmKennelAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmKennelRemove.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKennelRemove.Designer.cs">
+      <DependentUpon>frmKennelRemove.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmKennelType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKennelType.Designer.cs">
+      <DependentUpon>frmKennelType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmKennelUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKennelUpdate.Designer.cs">
+      <DependentUpon>frmKennelUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMainMenu.Designer.cs">
+      <DependentUpon>frmMainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReservationsCancelReservation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReservationsCancelReservation.Designer.cs">
+      <DependentUpon>frmReservationsCancelReservation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReservationsMakeReservation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReservationsMakeReservation.Designer.cs">
+      <DependentUpon>frmReservationsMakeReservation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReservationsRegisterCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReservationsRegisterCustomer.Designer.cs">
+      <DependentUpon>frmReservationsRegisterCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReservationsRegisterDog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReservationsRegisterDog.Designer.cs">
+      <DependentUpon>frmReservationsRegisterDog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmAdminKennelAnalysis.resx">
+      <DependentUpon>frmAdminKennelAnalysis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAdminRegisterArrival.resx">
+      <DependentUpon>frmAdminRegisterArrival.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAdminRegisterDeparture.resx">
+      <DependentUpon>frmAdminRegisterDeparture.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAdminRevenueAnalysis.resx">
+      <DependentUpon>frmAdminRevenueAnalysis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKennelAdd.resx">
+      <DependentUpon>frmKennelAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKennelRemove.resx">
+      <DependentUpon>frmKennelRemove.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKennelType.resx">
+      <DependentUpon>frmKennelType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKennelUpdate.resx">
+      <DependentUpon>frmKennelUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMainMenu.resx">
+      <DependentUpon>frmMainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReservationsCancelReservation.resx">
+      <DependentUpon>frmReservationsCancelReservation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReservationsMakeReservation.resx">
+      <DependentUpon>frmReservationsMakeReservation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReservationsRegisterCustomer.resx">
+      <DependentUpon>frmReservationsRegisterCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReservationsRegisterDog.resx">
+      <DependentUpon>frmReservationsRegisterDog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
