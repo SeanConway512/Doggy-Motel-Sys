@@ -28,42 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.backToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lblKennelType = new System.Windows.Forms.Label();
             this.txtKennelType = new System.Windows.Forms.TextBox();
             this.btnKennelType = new System.Windows.Forms.Button();
             this.lblKennelID = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.btnKennelID = new System.Windows.Forms.Button();
-            this.menuStrip1.SuspendLayout();
+            this.mnuMain = new System.Windows.Forms.MenuStrip();
+            this.kennelsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuSetType = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuKennelAdd = new System.Windows.Forms.ToolStripMenuItem();
+            this.updateKennelToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.removeKennelToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.bookingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.registerCustomerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.registerDogToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.makeReservationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cancelReservationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.adminToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.registerArrivalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.registerDepartureToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.revenueAnalysisToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.kennelAnalysisToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuExit = new System.Windows.Forms.ToolStripMenuItem();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.mnuMain.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // menuStrip1
-            // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.exitToolStripMenuItem,
-            this.backToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.menuStrip1.Size = new System.Drawing.Size(800, 24);
-            this.menuStrip1.TabIndex = 0;
-            this.menuStrip1.Text = "menuStrip1";
-            this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
-            // 
-            // exitToolStripMenuItem
-            // 
-            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
-            this.exitToolStripMenuItem.Text = "Exit";
-            // 
-            // backToolStripMenuItem
-            // 
-            this.backToolStripMenuItem.Name = "backToolStripMenuItem";
-            this.backToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
-            this.backToolStripMenuItem.Text = "Back";
             // 
             // lblKennelType
             // 
@@ -117,39 +108,201 @@
             this.btnKennelID.UseVisualStyleBackColor = true;
             this.btnKennelID.Click += new System.EventHandler(this.btnKennelID_Click);
             // 
+            // mnuMain
+            // 
+            this.mnuMain.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.kennelsToolStripMenuItem,
+            this.bookingsToolStripMenuItem,
+            this.adminToolStripMenuItem,
+            this.mnuExit});
+            this.mnuMain.Location = new System.Drawing.Point(0, 0);
+            this.mnuMain.Name = "mnuMain";
+            this.mnuMain.Size = new System.Drawing.Size(800, 24);
+            this.mnuMain.TabIndex = 7;
+            this.mnuMain.Text = "menuStrip1";
+            this.mnuMain.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.mnuMain_ItemClicked);
+            // 
+            // kennelsToolStripMenuItem
+            // 
+            this.kennelsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mnuSetType,
+            this.mnuKennelAdd,
+            this.updateKennelToolStripMenuItem,
+            this.removeKennelToolStripMenuItem});
+            this.kennelsToolStripMenuItem.Name = "kennelsToolStripMenuItem";
+            this.kennelsToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
+            this.kennelsToolStripMenuItem.Text = "Kennels";
+            // 
+            // mnuSetType
+            // 
+            this.mnuSetType.Name = "mnuSetType";
+            this.mnuSetType.Size = new System.Drawing.Size(157, 22);
+            this.mnuSetType.Text = "Set Kennel Type";
+            this.mnuSetType.Click += new System.EventHandler(this.mnuSetType_Click);
+            // 
+            // mnuKennelAdd
+            // 
+            this.mnuKennelAdd.Name = "mnuKennelAdd";
+            this.mnuKennelAdd.Size = new System.Drawing.Size(157, 22);
+            this.mnuKennelAdd.Text = "Add Kennel";
+            this.mnuKennelAdd.Click += new System.EventHandler(this.mnuKennelAdd_Click);
+            // 
+            // updateKennelToolStripMenuItem
+            // 
+            this.updateKennelToolStripMenuItem.Name = "updateKennelToolStripMenuItem";
+            this.updateKennelToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
+            this.updateKennelToolStripMenuItem.Text = "Update Kennel";
+            this.updateKennelToolStripMenuItem.Click += new System.EventHandler(this.updateKennelToolStripMenuItem_Click);
+            // 
+            // removeKennelToolStripMenuItem
+            // 
+            this.removeKennelToolStripMenuItem.Name = "removeKennelToolStripMenuItem";
+            this.removeKennelToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
+            this.removeKennelToolStripMenuItem.Text = "Remove Kennel";
+            this.removeKennelToolStripMenuItem.Click += new System.EventHandler(this.removeKennelToolStripMenuItem_Click);
+            // 
+            // bookingsToolStripMenuItem
+            // 
+            this.bookingsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.registerCustomerToolStripMenuItem,
+            this.registerDogToolStripMenuItem,
+            this.makeReservationToolStripMenuItem,
+            this.cancelReservationToolStripMenuItem});
+            this.bookingsToolStripMenuItem.Name = "bookingsToolStripMenuItem";
+            this.bookingsToolStripMenuItem.Size = new System.Drawing.Size(85, 20);
+            this.bookingsToolStripMenuItem.Text = "Reservations";
+            // 
+            // registerCustomerToolStripMenuItem
+            // 
+            this.registerCustomerToolStripMenuItem.Name = "registerCustomerToolStripMenuItem";
+            this.registerCustomerToolStripMenuItem.Size = new System.Drawing.Size(174, 22);
+            this.registerCustomerToolStripMenuItem.Text = "Register Customer";
+            this.registerCustomerToolStripMenuItem.Click += new System.EventHandler(this.registerCustomerToolStripMenuItem_Click);
+            // 
+            // registerDogToolStripMenuItem
+            // 
+            this.registerDogToolStripMenuItem.Name = "registerDogToolStripMenuItem";
+            this.registerDogToolStripMenuItem.Size = new System.Drawing.Size(174, 22);
+            this.registerDogToolStripMenuItem.Text = "Register Dog";
+            this.registerDogToolStripMenuItem.Click += new System.EventHandler(this.registerDogToolStripMenuItem_Click);
+            // 
+            // makeReservationToolStripMenuItem
+            // 
+            this.makeReservationToolStripMenuItem.Name = "makeReservationToolStripMenuItem";
+            this.makeReservationToolStripMenuItem.Size = new System.Drawing.Size(174, 22);
+            this.makeReservationToolStripMenuItem.Text = "Make Reservation";
+            this.makeReservationToolStripMenuItem.Click += new System.EventHandler(this.makeReservationToolStripMenuItem_Click);
+            // 
+            // cancelReservationToolStripMenuItem
+            // 
+            this.cancelReservationToolStripMenuItem.Name = "cancelReservationToolStripMenuItem";
+            this.cancelReservationToolStripMenuItem.Size = new System.Drawing.Size(174, 22);
+            this.cancelReservationToolStripMenuItem.Text = "Cancel Reservation";
+            this.cancelReservationToolStripMenuItem.Click += new System.EventHandler(this.cancelReservationToolStripMenuItem_Click);
+            // 
+            // adminToolStripMenuItem
+            // 
+            this.adminToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.registerArrivalToolStripMenuItem,
+            this.registerDepartureToolStripMenuItem,
+            this.revenueAnalysisToolStripMenuItem,
+            this.kennelAnalysisToolStripMenuItem});
+            this.adminToolStripMenuItem.Name = "adminToolStripMenuItem";
+            this.adminToolStripMenuItem.Size = new System.Drawing.Size(55, 20);
+            this.adminToolStripMenuItem.Text = "Admin";
+            // 
+            // registerArrivalToolStripMenuItem
+            // 
+            this.registerArrivalToolStripMenuItem.Name = "registerArrivalToolStripMenuItem";
+            this.registerArrivalToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
+            this.registerArrivalToolStripMenuItem.Text = "Register Arrival";
+            this.registerArrivalToolStripMenuItem.Click += new System.EventHandler(this.registerArrivalToolStripMenuItem_Click);
+            // 
+            // registerDepartureToolStripMenuItem
+            // 
+            this.registerDepartureToolStripMenuItem.Name = "registerDepartureToolStripMenuItem";
+            this.registerDepartureToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
+            this.registerDepartureToolStripMenuItem.Text = "Register Departure";
+            this.registerDepartureToolStripMenuItem.Click += new System.EventHandler(this.registerDepartureToolStripMenuItem_Click);
+            // 
+            // revenueAnalysisToolStripMenuItem
+            // 
+            this.revenueAnalysisToolStripMenuItem.Name = "revenueAnalysisToolStripMenuItem";
+            this.revenueAnalysisToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
+            this.revenueAnalysisToolStripMenuItem.Text = "Revenue Analysis";
+            this.revenueAnalysisToolStripMenuItem.Click += new System.EventHandler(this.revenueAnalysisToolStripMenuItem_Click);
+            // 
+            // kennelAnalysisToolStripMenuItem
+            // 
+            this.kennelAnalysisToolStripMenuItem.Name = "kennelAnalysisToolStripMenuItem";
+            this.kennelAnalysisToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
+            this.kennelAnalysisToolStripMenuItem.Text = "Kennel Analysis";
+            this.kennelAnalysisToolStripMenuItem.Click += new System.EventHandler(this.kennelAnalysisToolStripMenuItem_Click);
+            // 
+            // mnuExit
+            // 
+            this.mnuExit.Name = "mnuExit";
+            this.mnuExit.Size = new System.Drawing.Size(37, 20);
+            this.mnuExit.Text = "Exit";
+            this.mnuExit.Click += new System.EventHandler(this.mnuExit_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::DoggyMotelSys.Properties.Resources.images1;
+            this.pictureBox1.Location = new System.Drawing.Point(489, 264);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(299, 174);
+            this.pictureBox1.TabIndex = 8;
+            this.pictureBox1.TabStop = false;
+            // 
             // frmKennelAdd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.mnuMain);
             this.Controls.Add(this.btnKennelID);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.lblKennelID);
             this.Controls.Add(this.btnKennelType);
             this.Controls.Add(this.txtKennelType);
             this.Controls.Add(this.lblKennelType);
-            this.Controls.Add(this.menuStrip1);
-            this.MainMenuStrip = this.menuStrip1;
             this.Name = "frmKennelAdd";
             this.Text = "frmKennelAdd";
             this.Load += new System.EventHandler(this.frmKennelAdd_Load);
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
+            this.mnuMain.ResumeLayout(false);
+            this.mnuMain.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem backToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private System.Windows.Forms.Label lblKennelType;
         private System.Windows.Forms.TextBox txtKennelType;
         private System.Windows.Forms.Button btnKennelType;
         private System.Windows.Forms.Label lblKennelID;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button btnKennelID;
+        private System.Windows.Forms.MenuStrip mnuMain;
+        private System.Windows.Forms.ToolStripMenuItem kennelsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mnuSetType;
+        private System.Windows.Forms.ToolStripMenuItem mnuKennelAdd;
+        private System.Windows.Forms.ToolStripMenuItem updateKennelToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem removeKennelToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem bookingsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem registerCustomerToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem registerDogToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem makeReservationToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cancelReservationToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem adminToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem registerArrivalToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem registerDepartureToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem revenueAnalysisToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem kennelAnalysisToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mnuExit;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
